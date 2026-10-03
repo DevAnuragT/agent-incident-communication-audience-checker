@@ -1,0 +1,59 @@
+{
+  "name": "review-incident-communication-audience-checker",
+  "description": "Run Incident Communication Audience Checker",
+  "version": "0.1.0",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "payload": {
+        "type": "object",
+        "properties": {
+          "incident_id": {
+            "type": "string",
+            "description": "incident id"
+          },
+          "stakeholder_groups": {
+            "type": "array",
+            "description": "stakeholder groups"
+          },
+          "sent_updates": {
+            "type": "array",
+            "description": "sent updates"
+          },
+          "next_update_at": {
+            "type": "string",
+            "description": "next update at"
+          }
+        },
+        "required": [
+          "incident_id",
+          "stakeholder_groups",
+          "sent_updates",
+          "next_update_at"
+        ]
+      }
+    },
+    "required": [
+      "payload"
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "status": {
+        "type": "string"
+      },
+      "score": {
+        "type": "object"
+      },
+      "findings": {
+        "type": "array"
+      }
+    }
+  },
+  "implementation": {
+    "type": "script",
+    "path": "review-incident-communication-audience-checker.py",
+    "runtime": "python3"
+  }
+}

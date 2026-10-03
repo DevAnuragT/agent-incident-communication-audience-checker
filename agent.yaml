@@ -1,0 +1,11 @@
+spec_version: "0.1.0"
+name: incident-communication-audience-checker
+version: 0.1.0
+description: Check incident updates against declared stakeholder groups and communication cadence.
+skills:
+  - incident-communication-audience-checker-skill
+tools:
+  - review-incident-communication-audience-checker
+tags:
+  - cybersecurity
+  - evidence-driven

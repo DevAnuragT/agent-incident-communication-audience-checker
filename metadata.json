@@ -1,0 +1,29 @@
+{
+  "slug": "incident-communication-audience-checker",
+  "title": "Incident Communication Audience Checker",
+  "category": "cybersecurity",
+  "description": "Check incident updates against declared stakeholder groups and communication cadence.",
+  "fields": {
+    "incident_id": {
+      "label": "incident id",
+      "kind": "required",
+      "minimum": 0
+    },
+    "stakeholder_groups": {
+      "label": "stakeholder groups",
+      "kind": "list",
+      "minimum": 1
+    },
+    "sent_updates": {
+      "label": "sent updates",
+      "kind": "list",
+      "minimum": 1
+    },
+    "next_update_at": {
+      "label": "next update at",
+      "kind": "date",
+      "minimum": 0
+    }
+  },
+  "limitations": "Uses caller-provided evidence only; cannot confirm external facts. Human review remains required."
+}

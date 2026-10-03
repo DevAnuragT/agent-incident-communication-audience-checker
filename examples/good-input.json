@@ -1,0 +1,10 @@
+{
+  "incident_id": "evidence-record",
+  "stakeholder_groups": [
+    "record-1"
+  ],
+  "sent_updates": [
+    "record-1"
+  ],
+  "next_update_at": "2026-10-03"
+}
